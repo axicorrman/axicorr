@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "axicorr",
-    "currentPage": "ru.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -62,7 +62,7 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "en",
+        "title": "Correction of Humanitarian Anomalies",
         "meta_descr": "Diagnostics and Correction of Humanitarian Anomalies",
         "header_custom": "",
         "footer_custom": "",
@@ -547,7 +547,7 @@
     },
     "ua.html": {
       "settings": {
-        "title": "ua",
+        "title": "Корекція Гуманітарних Аномалій",
         "meta_descr": ""
       },
       "components": [
@@ -1029,7 +1029,7 @@
     },
     "ru.html": {
       "settings": {
-        "title": "ru",
+        "title": "Коррекция Гуманитарных Аномалий",
         "meta_descr": "Диагностика и Коррекция Гуманитарных Аномалий"
       },
       "components": [
