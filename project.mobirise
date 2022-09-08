@@ -1033,7 +1033,7 @@
     "ru.html": {
       "settings": {
         "title": "Коррекция Гуманитарных Аномалий",
-        "meta_descr": "Диагностика и Коррекция Гуманитарных Аномалий",
+        "meta_descr": "",
         "socialSharingUrl": "",
         "meta_image": "@PROJECT_PATH@/assets/images/avtor-815x961.jpg"
       },
