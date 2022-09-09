@@ -27,11 +27,11 @@ body {
 }
 .display-5 {
   font-family: 'Jost', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
 .display-5 > .mbr-iconfont {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 .display-7 {
   font-family: 'Jost', sans-serif;
@@ -68,9 +68,9 @@ body {
     line-height: calc( 1.4 * (1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-5 {
-    font-size: 1.6rem;
-    font-size: calc( 1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 1.44rem;
+    font-size: calc( 1.28rem + (1.8 - 1.28) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.28rem + (1.8 - 1.28) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-7 {
     font-size: 0.96rem;
@@ -1498,7 +1498,7 @@ a {
   top: 0;
 }
 .cid-tgyiV2YHdc .mbr-section-title {
-  color: #000000;
+  color: #0b2e70;
 }
 .cid-tgyiV2YHdc .mbr-text,
 .cid-tgyiV2YHdc .mbr-section-btn {
@@ -1540,7 +1540,7 @@ a {
   padding: 1rem 0;
 }
 .cid-tgyiZ8VyxF .panel-title-edit {
-  color: #353535;
+  color: #0b2e70;
   text-align: right;
 }
 .cid-tgyiZ8VyxF .card .card-header {
@@ -1551,7 +1551,7 @@ a {
   color: #000000;
 }
 .cid-tgyiZ8VyxF H3 {
-  color: #353535;
+  color: #0b2e70;
   text-align: center;
 }
 .cid-tgyKdeMdoq {
@@ -1843,7 +1843,7 @@ a {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #0f2857;
+  background-color: #fafafa;
 }
 .cid-tgyKdeMdoq button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -1950,4 +1950,8 @@ a {
   .cid-tgPtlUWQNV .text-wrapper {
     margin-bottom: 2rem;
   }
+}
+.cid-tgPtlUWQNV .mbr-text,
+.cid-tgPtlUWQNV .mbr-section-btn {
+  color: #0b2e70;
 }
