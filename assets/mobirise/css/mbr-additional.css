@@ -1915,6 +1915,8 @@ a {
   }
 }
 .cid-tgPtlUWQNV {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-color: #ffffff;
 }
 .cid-tgPtlUWQNV .mbr-fallback-image.disabled {
@@ -1944,6 +1946,7 @@ a {
 @media (min-width: 992px) {
   .cid-tgPtlUWQNV .text-wrapper {
     padding: 0 2rem;
+    padding: 0 4rem;
   }
 }
 @media (max-width: 768px) {
