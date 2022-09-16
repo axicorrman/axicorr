@@ -45,7 +45,7 @@
         "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 53,
+    "uniqCompNum": 73,
     "versionPublish": "5.6.11",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -70,63 +70,6 @@
         "meta_image": "@PROJECT_PATH@/assets/images/avtor-815x961.jpg"
       },
       "components": [
-        {
-          "alias": false,
-          "_styles": {
-            "display": "flex",
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            ".content-wrap": {
-              "padding": "5rem 1rem"
-            },
-            "@media (min-width: 768px)": {
-              "align-items": "~\"@{verticalAlign}\"",
-              ".row": {
-                "justify-content": "~\"@{horizontalAlign}\""
-              },
-              ".content-wrap": {
-                "width": "~\"@{contentWidth}%\""
-              }
-            },
-            "@media (max-width: 991px) and (min-width: 768px)": {
-              ".content-wrap": {
-                "min-width": "50%"
-              }
-            },
-            "@media (max-width: 767px)": {
-              "-webkit-align-items": "center",
-              "align-items": "center",
-              ".mbr-row": {
-                "-webkit-justify-content": "center",
-                "justify-content": "center"
-              },
-              ".content-wrap": {
-                "width": "100%"
-              }
-            }
-          },
-          "_name": "header4",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header4\" group=\"Headers\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"20\" max=\"100\" step=\"1\" value=\"51\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n            <option value=\"flex-start\">Top</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\" selected>Bottom</option>\n        </select>\n        <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n            <option value=\"flex-start\" selected>Left</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\">Right</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background12.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#353535\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#353535\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"content-wrap\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-3\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><b>Coming Soon</b></h1>\n                <h2 class=\"mbr-section-title mbr-fonts-style mbr-white mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">Header Subtitle</h2>\n                <p class=\"mbr-fonts-style mbr-text mbr-white mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Block with flexible configuration, free vertical and horizontal content movement (only when\n                    full screen is on)\n                </p>\n\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">Learn more</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tgyqo89FGp",
-          "_anchor": "header4-14",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
         {
           "alias": false,
           "_styles": {
@@ -543,6 +486,63 @@
           "_global": true,
           "_once": "menu",
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "display": "flex",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".content-wrap": {
+              "padding": "5rem 1rem"
+            },
+            "@media (min-width: 768px)": {
+              "align-items": "~\"@{verticalAlign}\"",
+              ".row": {
+                "justify-content": "~\"@{horizontalAlign}\""
+              },
+              ".content-wrap": {
+                "width": "~\"@{contentWidth}%\""
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".content-wrap": {
+                "min-width": "50%"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              ".mbr-row": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center"
+              },
+              ".content-wrap": {
+                "width": "100%"
+              }
+            }
+          },
+          "_name": "header4",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header4\" group=\"Headers\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"20\" max=\"100\" step=\"1\" value=\"51\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n            <option value=\"flex-start\">Top</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\" selected>Bottom</option>\n        </select>\n        <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n            <option value=\"flex-start\" selected>Left</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\">Right</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background12.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#353535\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#353535\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"content-wrap\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-3\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n                    <b>New Possibilities</b>\n                </h1>\n                <h2 class=\"mbr-section-title mbr-fonts-style mbr-white mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">Header Subtitle</h2>\n                <p class=\"mbr-fonts-style mbr-text mbr-white mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Block with flexible configuration, free vertical and horizontal content movement (only when\n                    full screen is on)\n                </p>\n\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">Learn more</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "thAxDnUOak",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header4-1w"
         }
       ]
     },
@@ -1041,125 +1041,6 @@
         {
           "alias": false,
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = \"color\")": {
-              "& when not (@gradientBg)": {
-                "background-color": "@bg-value"
-              },
-              "& when (@gradientBg)": {
-                "background-image": "linear-gradient(~\"@{gradientAngle}deg\", @gradientColor2 10%, @bg-value 100%) !important"
-              }
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = 'video')": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#0b2e70"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#000000"
-            }
-          },
-          "_name": "header18",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header18\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"11\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value>Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background6.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>4479d9\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Gradient Bg\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"gradientColor2\" value=\"#fafafa\" condition=\"gradientBg && bg.type == 'color'\">\n        <input type=\"range\" inline name=\"gradientAngle\" title=\"Gradient Angle\" min=\"0\" max=\"360\" value=\"135\" step=\"1\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#4479d9\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Миллионы лет животный мир успешен без Конституции. \n<div>Человек даже пукает по правилам, но уже стоит на пороге самоуничтожения.</div></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-white mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\"><b>\n                        Header Subtitle\n                    </b></h2>\n                <p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Амосов Н.М.\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Create\n                        Your Website!</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tgyiV2YHdc",
-          "_anchor": "header18-x",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = 'video')": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
-            ".mbr-iconfont": {
-              "font-size": "1.4rem !important",
-              "font-family": "'Moririse2' !important",
-              "color": "@primaryColor",
-              "margin-left": "1rem"
-            },
-            ".panel-group": {
-              "border": "none"
-            },
-            ".panel-title": {
-              "display": "flex",
-              "align-items": "center",
-              "justify-content": "space-between"
-            },
-            ".panel-body, .card-header": {
-              "padding": "1rem 0"
-            },
-            ".panel-title-edit": {
-              "color": "#0b2e70",
-              "text-align": "right"
-            },
-            ".card .card-header": {
-              "background-color": "transparent",
-              "margin-bottom": "0"
-            },
-            ".panel-text": {
-              "color": "#000000"
-            },
-            "H3": {
-              "color": "#0b2e70",
-              "text-align": "center"
-            }
-          },
-          "_name": "content16",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content16\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-switch-arrow, mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"9\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <select title=\"Amount\" name=\"cardAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <div class=\"mbr-section-head align-center mb-4\" mbr-if=\"showTitle || showSubtitle\">\n                    <h3 class=\"mbr-section-title mb-0 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">БЕЗУМИЕ 2022</h3>\n                    <h4 class=\"mbr-section-subtitle mb-0 mt-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                       Accordion Subtitle</h4>\n                </div>\n                <div id=\"bootstrap-accordion\" class=\"panel-group accordionStyles accordion\" role=\"tablist\" aria-multiselectable=\"true\">\n                    <div class=\"card mb-3\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">История Болезни</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">По мнению господина Лаврова, отношения США и России – разговор немого с глухим. Объективно, два дурака спорят: кто из них умнее. К сожалению, это не метафора, это патология. <b>Любой гуманитарный конфликт – свидетельство ментальной недееспособности сторон.\n</b><br><br>Центрифуга Избытка или Третья Аксиома Творца: <b>«Если одни находят смысл в том, что бесполезно для других – ошибаются все – лишь Истина необходима каждому».</b> В этой парадигме «русское» так же бесполезно для «американского», как и наоборот. В здравом ли уме – спорить о бессмысленном для Жизни?\n<br><br>Политика, бизнес, <b>любовь есть удовлетворение себя за счет согласного на это. </b>Чем больше согласных, тем слаще удовольствие. Тысячелетия по этой формуле работают «печатные станки» национального, религиозного и прочего тиражирования. Что, собственно, и привело к необратимой <b>Инфляции Человека</b>.\n<br><br><b>Копийность в доинтеллектуальном мире – обязательное условие выживания. Но в мире интеллекта – жизненное противопоказание:</b> чтобы получить точный слепок процесса, процесс придется остановить. “Разговор немого с глухим” по Лаврову – пример последствий такой остановки.\n<br><br>Зарабатывать на болезни всегда проще. А имеющих из этого, куда больше. Кроме Сапожника, конечно. <b>И спросил Творец Человека: «Скажи, какой в тебе смысл, чтобы я нуждался в тебе? Что ты можешь такого, чего я не могу без тебя?».</b><br><br>Дворцы, кино, оружие, тюрьмы, должности, наркотики, музеи, храмы… Увы, <b>общего из необходимого</b> у человечества только «желудок», который давно вместо мозга. Такой вот соматической моделью представлен Человек во Вселенной, в глазах которой он даже не дебил, а, так – псевдоподия (амеба).&nbsp;<br></p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card mb-3\" mbr-if=\"cardAmount > 1\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Диагноз</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\"><b>Синдром Приобретённого Идеологического Дефицита</b>. Возникает в условиях<b> Избыточного Коллективизма.</b> Поражает всякое сознание, материальные возможности которого избыточны по отношению к его интеллектуально-духовным способностям. \n<br><br>Подобное состояние, когда Человек <b>имеет больше, чем умеет </b>– приводит к <b>злокачественной монетизации отношений</b>: прибыль становится коррумпированной, законы – субъективными; интеллектуально-духовная эволюция – бессмысленной; мирное сосуществование мировоззрений – невозможным.\n<br><br>В случае поражения Личности, приводит к <b>ментальному «ожирению» </b>Человека. В своей гуманитарной массе это новый, но уже глобально-доминирующий социальный класс, <b>общественные запросы которого превышают его персональную продуктивность.\n</b><br><br>Избрав<b> Коллективизм Матрицей Миропорядка</b>, Человек разошелся с Эволюцией в методах и целях их главной миссии.  <b>Если Эволюция есть достижение ЕДИНСТВА РАЗНОСТЕЙ</b>, то Человек пытается организовать ЕДИНСТВО, стерев всякую РАЗНОСТЬ. Дело уже до полов дошло.\n<br><br>Если Эволюция есть жизнь на грани, что исключает избыток априори, то Коллективизм – наоборот – призван растворить эту грань в ИЗБЫТКЕ. И «контрольный выстрел»: если главная <b>цель Эволюции – САМОДОСТАТОЧНАЯ ЛИЧНОСТЬ,</b> то для Коллективизма это дорога на эшафот.\n<br><br>Идеологическая прострация, политическая истерия, национальные и религиозные психозы, параноидальный меркантилизм – далеко не полная картина Мира. Но вполне исчерпывающая иллюстрация того состояния, в котором пребывает каждый организм, Коллективизм в частности, перед своей кончиной.&nbsp;<br></p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card mb-3\" mbr-if=\"cardAmount > 2\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Лечение</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\"><b>Персональное\n</b><br>Как СПИДm, так и «ментальное ожирение» – лечению не подлежат – баланс между «иметь» и «уметь» пребывает исключительно в командном подчинении Человека. На этот случай даже «командная строка» имеется: <b>«И создал Бог Человека». </b>Внимание, и ни слова про русских, американцев… Это «де-юре».\n<br><br>Де-факто Земля принадлежит кому угодно – китайцам, иудеям, мусульманам, бедным, богатым, судьям, злодеям – всем – кроме <b>Её законного собственника – Человека</b>. Ещё Диоген заметил. Поэтому, быть русским, русским человеком или Человеком – кому как легче.<br><br><b>Социальное\n</b><br>В силу объективной несовместимости с Эволюцией Вселенной, и как наиболее агрессивная форма ментальной зависимости, Избыточный Коллективизм обречён вместе с его Носителями. Поэтому,&nbsp;<b>идеологическое «обезболивание»</b> – единственное средство купировать мировую истерию.<br>\n<br><b>Матрица Единого Мнения или Идеология Сожития личности, религий, наций и культур.</b> Представляет собой материально-духовную сделку, которая позволяет: завершить эпоху Коллективизма его демонтажем вместо распада; и с достаточным иммунитетом ступить в эпоху Самодостаточности.&nbsp;<br></p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card mb-3\" mbr-if=\"cardAmount > 3\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Словарь</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\"><b>\n                                    Избыточный Коллективизм</b> – форма социального предпринимательства или материально-духовная сделка, в которой одна сторона удовлетворяет свои потребности за счет согласной на это другой стороны. Примеры Избыточного Коллективизма: Родина, Национализм, Государство, Школа и т.д.<br><br><b>Человек Самодостаточный</b> – Личность, способная сохранять абсолютный материально-духовный баланс между избытком и дефицитом. Пример абсолютного материального баланса в доинтеллектуальном мире – каждый живой организм.<br></p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card mb-3\" mbr-if=\"cardAmount > 4\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-title-edit\"><b>What is Mobirise Kit?\n                                    </b></h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n                                    Mobirise Kit is a service that provides the access to all current and new\n                                    themes/extensions developed by Mobirise. New themes/extensions are released every\n                                    month and will be available in your account during your plan period, without any\n                                    additional charge.</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card mb-3\" mbr-if=\"cardAmount > 5\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-title-edit\"><b>Can I create sites for commerical\n                                        projects?</b></h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n                                    Yes, Mobirise is free for both non-profit and commercial sites.</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tgyiZ8VyxF",
-          "_anchor": "content16-z",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "& when not (@sticky)": {
               ".navbar-dropdown": {
                 "position": "relative !important"
@@ -1579,6 +1460,124 @@
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".timeline-element": {
+              "position": "relative"
+            },
+            ".image-wrapper img": {
+              "width": "100%",
+              "object-fit": "cover"
+            },
+            ".iconBackground": {
+              "position": "absolute",
+              "@media (max-width: 767px)": {
+                "left": "15px"
+              },
+              "@media (min-width: 768px)": {
+                "left": "50%"
+              },
+              "width": "20px",
+              "height": "20px",
+              "border-radius": "50%",
+              "border": "2px solid @lineColor",
+              "top": "30px",
+              "margin-left": "-9px",
+              "padding": "0"
+            },
+            ".row": {
+              "&:after": {
+                "content": "\"\"",
+                "position": "absolute",
+                "background-color": "@lineColor",
+                "width": "2px",
+                "@media (max-width: 767px)": {
+                  "left": "15px"
+                },
+                "@media (min-width: 768px)": {
+                  "left": "50%"
+                },
+                "top": "50px",
+                "height": "calc(100% ~\"-\" 10px)"
+              },
+              "& when (@reverseTimeline)": {
+                "flex-direction": "row-reverse",
+                "&:nth-child(even)": {
+                  ".mbr-timeline-date": {
+                    "text-align": "right"
+                  },
+                  "@media (max-width: 767px)": {
+                    "flex-direction": "column-reverse"
+                  }
+                }
+              },
+              "& when not (@reverseTimeline)": {
+                "&:nth-child(odd)": {
+                  ".mbr-timeline-date": {
+                    "text-align": "right"
+                  }
+                },
+                "&:nth-child(even)": {
+                  "@media (max-width: 767px)": {
+                    "flex-direction": "column-reverse"
+                  }
+                }
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".timeline-date-wrapper, .timeline-text-wrapper": {
+                "padding": "0rem",
+                "padding-left": "2rem"
+              },
+              ".mbr-timeline-date": {
+                "text-align": "left !important"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".timeline-date-wrapper, .timeline-text-wrapper": {
+                "padding": "1rem"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".timeline-date-wrapper, .timeline-text-wrapper": {
+                "padding": "2rem"
+              }
+            }
+          },
+          "_name": "timeline1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"timeline1\" group=\"Timelines\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Reverse Timeline\" name=\"reverseTimeline\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Dates\" name=\"showDates\">\n        <input type=\"checkbox\" title=\"Images\" name=\"showImages\">\n        <select title=\"Count\" name=\"timelinesAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n            <option value=\"7\">7</option>\n            <option value=\"8\">8</option>\n            <option value=\"9\">9</option>\n            <option value=\"10\">10</option>\n            <option value=\"11\">11</option>\n            <option value=\"12\">12</option>\n        </select>\n        <input type=\"color\" name=\"lineColor\" title=\"Color\" value=\"#e43f3f\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" class=\"timelines-container\" mbri-timelines>\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>БЕЗУМИЕ 2022</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                Государственность против Эволюции</h4>\n        </div>\n        <div class=\"row timeline-element mb-2 mt-4\" mbr-class=\"{'reverseTimeline': reverseTimeline}\">\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>История Болезни</b></h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features1.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">По мнению господина Лаврова, отношения США и России – разговор немого с глухим. Объективно, два дурака спорят: кто из них умнее. К сожалению, это не метафора, это патология. Любой <b>гуманитарный конфликт – свидетельство ментальной недееспособности сторон.\n</b><br><br>Центрифуга Избытка: <b>«Если одни находят смысл в том, что бесполезно для других – ошибаются все – лишь Истина необходима каждому».</b> В этой парадигме «русское» так же бесполезно для «американского», как и наоборот. В здравом ли уме – спорить о бессмысленном для Жизни?\n<br><br><b>Политика, бизнес, любовь есть удовлетворение себя за счет согласного на это.</b> Чем больше согласных, тем слаще удовольствие. Тысячелетия по этой формуле работают «печатные станки» национального, религиозного и прочего тиражирования. Что, собственно, и привело к необратимой Инфляции Человека.\n<br><br><b>Копийность в доинтеллектуальном мире – обязательное условие выживания. Но в мире интеллекта – жизненное противопоказание: </b>чтобы получить точный слепок процесса, процесс придется остановить. “Разговор немого с глухим” по Лаврову – пример последствий такой остановки.\n<br><br>Зарабатывать на болезни всегда проще. А имеющих из этого, куда больше. Кроме Сапожника, конечно. И спросил Творец Человека:<b> «Скажи, какой в тебе смысл, чтобы я нуждался в тебе? Что ты можешь такого, чего я не могу без тебя?».\n</b><br><br>Дворцы, кино, оружие, тюрьмы, должности, наркотики, музеи, храмы… Увы, <b>общего из необходимого</b> у человечества только «желудок», который давно вместо мозга. Такой вот соматической моделью представлен Человек во Вселенной, в глазах которой он даже не дебил, а, так – псевдоподия (амеба).&nbsp;<br></p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-if=\"timelinesAmount>1\">\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Диагноз</b></h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features2.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><b>Синдром Приобретённого Идеологического Дефицита – СПИДm. </b>Возникает в условиях Избыточного Коллективизма. Поражает всякое сознание, материальные возможности которого избыточны по отношению к его интеллектуально-духовным способностям. \n<br><br>Подобное состояние, когда Человек <b>имеет больше, чем умеет</b> – приводит к злокачественной монетизации отношений: прибыль становится коррумпированной, законы – субъективными; интеллектуально-духовная эволюция – бессмысленной; мирное сосуществование мировоззрений – невозможным.\n<br><br>В случае поражения Личности, приводит к <b>ментальному «ожирению» Человека</b>. В своей гуманитарной массе это новый, но уже глобально-доминирующий социальный класс, общественные запросы которого превышают его персональную продуктивность.\n<br><br>Избрав Коллективизм Матрицей Миропорядка, Человек разошелся с Эволюцией в методах и целях их главной миссии.  Если <b>Эволюция есть достижение ЕДИНСТВА РАЗНОСТЕЙ</b>, то Человек пытается организовать ЕДИНСТВО, стерев всякую РАЗНОСТЬ. Дело уже до полов дошло.\n<br><br>Если <b>Эволюция есть жизнь на грани</b>, что исключает избыток априори, то Коллективизм – наоборот – призван растворить эту грань в ИЗБЫТКЕ. И «контрольный выстрел»: если<b> главная цель Эволюции – САМОДОСТАТОЧНАЯ ЛИЧНОСТЬ</b>, то для Коллективизма это дорога на эшафот.\n<br><br>Идеологическая прострация, политическая истерия, национальные и религиозные психозы, параноидальный меркантилизм – далеко не полная картина Мира. Но вполне исчерпывающая иллюстрация того состояния, в котором пребывает Коллективизм перед своей кончиной.&nbsp;<br></p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-if=\"timelinesAmount>2\">\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Лечение</b></h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><b>Персональное\n<br></b>Как СПИДm, так и «ментальное ожирение» – лечению не подлежат – баланс между «иметь» и «уметь» пребывает исключительно в подчинении Человека. На этот случай даже «командная строка» имеется: «И создал Бог Человека». Внимание, и ни слова про русских, американцев… Это «де-юре».\n<br><br>Де-факто Земля принадлежит кому угодно – китайцам, иудеям, мусульманам, бедным, богатым, судьям, злодеям – всем – кроме Её законного собственника – Человека. Ещё Диоген заметил. Поэтому, быть русским, русским человеком или Человеком – кому как легче.\n<br><br><b>Социальное\n<br></b>В силу объективной несовместимости с Эволюцией Вселенной, и как наиболее агрессивная форма ментальной зависимости, Избыточный Коллективизм обречён вместе с его Носителями. Поэтому, идеологическое «обезболивание» – единственное средство купировать мировую истерию.\n<br><br><b>Матрица Единого Мнения или Идеология Сожития личности, религий, наций и культур. </b>Представляет собой материально-духовную сделку, которая позволяет: завершить эпоху Коллективизма его демонтажем вместо распада; и с достаточным иммунитетом ступить в эпоху Самодостаточности.&nbsp;<br></p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>3\">\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Словарь</b></h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features4.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><b>Избыточный Коллективизм</b> – форма социального предпринимательства или материально-духовная сделка, в которой одна сторона удовлетворяет свои потребности за счет согласной на это другой стороны. Примеры Избыточного Коллективизма: Родина, Национализм, Государство, Школа и т.д.\n<br><br><b>Человек Самодостаточный</b> – Личность, способная сохранять абсолютный материально-духовный баланс между избытком и дефицитом. Пример абсолютного материального баланса в доинтеллектуальном мире – каждый живой организм.&nbsp;<br></p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>4\">\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Form Builder</b>\n                    </h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features4.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        You don't have to code to create your own site. Select one of available themes in the Mobirise\n                        sitebuilder.\n                    </p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>5\">\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Form Builder</b>\n                    </h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features4.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        All sites you create with the Mobirise web builder are mobile-friendly natively. No special\n                        actions required.\n                    </p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>6\">\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Form Builder</b>\n                    </h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features4.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        Select the theme that suits you. Each theme in the Mobirise site builder contains a set of\n                        unique blocks.\n                    </p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>7\">\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Form Builder</b>\n                    </h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features4.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        Use Mobirise website building software to create multiple sites for commercial and non-profit\n                        projects.\n                    </p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>8\">\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Form Builder</b>\n                    </h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features4.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        You don't have to code to create your own site. Select one of available themes in the Mobirise\n                        sitebuilder.\n                    </p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>9\">\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Form Builder</b>\n                    </h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features4.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        All sites you create with the Mobirise web builder are mobile-friendly natively. No special\n                        actions required.\n                    </p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>10\">\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Form Builder</b>\n                    </h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features4.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        Select the theme that suits you. Each theme in the Mobirise site builder contains a set of\n                        unique blocks.\n                    </p>\n                </div>\n            </div>\n        </div>\n        <div class=\"row timeline-element mb-2\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>11\">\n            <div class=\"col-12 col-md-6\">\n                <div class=\"timeline-text-wrapper\">\n                    <h4 class=\"mbr-timeline-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-title\">\n                        <b>Form Builder</b>\n                    </h4>\n                    <div class=\"image-wrapper mb-4\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features4.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        Use Mobirise website building software to create multiple sites for commercial and non-profit\n                        projects.\n                    </p>\n                </div>\n            </div>\n            <span class=\"iconBackground\"></span>\n            <div class=\"timeline-date col-12 col-md-6\">\n                <div class=\"timeline-date-wrapper\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showDates\" data-toolbar=\"-mbrAlign\" data-app-selector=\".mbr-timeline-date\">\n                        <b>23 April 2025</b>\n                    </p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "thAyk59iL7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "timeline1-1x"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
@@ -1627,12 +1626,12 @@
           "_name": "features12",
           "_sourceTheme": "mobirise5",
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"features11\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Items\" name=\"showLink\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"m-0 row align-items-center\">\n            <div class=\"col-12 col-lg\" mbr-class=\"{'offset-lg-1': fullWidth}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n                            <b>Automagically mobile</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .link-wrap, .mbr-section-btn\">\n                            Нет тех, кто опережает Время. Есть те, кто отстаёт от Него.</p>\n                        <div class=\"mbr-text mbr-fonts-style counter-container\" mbr-theme-style=\"display-7\" mbr-if=\"showLink\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                            <ul>\n                                <li>Mobile-friendly</li>\n                                <li>Easy setup</li>\n                                <li>Edit visually</li>\n                            </ul>\n                        </div>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mb-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">View all our features</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"p-0 col-12 col-lg-{{imageWidth}} md-pb\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/avtor-815x961.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "th1eC3zxUq",
-          "_anchor": "features12-1f",
+          "_cid": "thAzQ0Z4aL",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "features12-20"
         }
       ]
     }
